@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 
@@ -64,20 +66,25 @@ export default class CreatePost extends Component{
         <div className="create_content" >
           <form onSubmit={this.addToList} >
             <h3>
-              <label> Author:   </label>
-              <input name="authorName" type="text" placeholder="Author" value={this.state.authorName} onChange={this.handleNameChange} />
+              <label> User Name: </label>
+                <br/>
+                <input className="input" name="name" type="text"  value={this.state.authorName} onChange={this.handleNameChange} />
             </h3>
               <hr/>
-            <h3>
-              <label> Title:   </label>
-              <input name="blogTitle" type="text" placeholder="Title" value={this.state.blogTitle} onChange={this.handleBlogChange} />
-            </h3>
-              <hr/>
-            <h3>
-              <label> Blog Entry:   </label>
-              <textarea name="blogEntry" type="text" placeholder="Blog" value={this.state.blogEntry} onChange={this.handleEntryChange} />
-            </h3>
-              <button type="submit">Submit</button>
+                <h3>
+                  <label> Title:   </label>
+                    <br/>
+                    <input className="input" name="title" type="text"  value={this.state.blogTitle} onChange={this.handleBlogChange} />
+                </h3>
+                  <hr/>
+                    <h3>
+                    <label> Blog Entry:   </label>
+                      <br/>
+                      <textarea rows="2" columns="6" className="input_text" name="blog" type="text" placeholder="Blog About It" value={this.state.blogEntry} onChange={this.handleEntryChange} />
+                    </h3>
+
+                        <button className="button" type="submit"><NavLink to='/postlist'>Submit</NavLink></button>
+
           </form>
         </div>
       </div>

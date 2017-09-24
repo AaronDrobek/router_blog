@@ -1,7 +1,26 @@
-.App {
-  text-align: center;
+@fontface {
+
+  font-family: 'Sigmar One', cursive;
+  src: url('https://fonts.googleapis.com/css?family=Modak|Sigmar+One" rel="stylesheet')
 }
-.selected{
+
+
+.app_box {
+  padding-top: 10vw;
+  width: 100vw;
+  height: 45vw;
+  text-align: center;
+  background-image: url('../images/seth-schwiet-40984.jpg');
+  background-size: cover;
+}
+.app_content{
+  margin-left: 25vw;
+  font-size: 30pt;
+  color: hotpink;
+  font-family: 'Sigmar One', cursive;
+
+}
+ .selected {
   color: limegreen;
 }
 .base_content {
@@ -10,20 +29,76 @@
   width: 100vw;
   position: fixed;
   background-color: #222;
-  height: 6vw;
+  height: 4vw;
   padding: 10px;
   color: white;
 }
 .base_content a{
-  margin-left: 3vw;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24pt;
+  font-family: 'Sigmar One', cursive;
+  margin-left: 6vw;
+  margin-right: 6vw;
 }
 .create_box{
-
-  padding-top: 10vw;
+  height: 55vw;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/mike-tinnion-327565.jpg');
+  padding-top: 8vw;
+  padding-bottom: 3vw;
 
 }
+.input{
+  font-size: 22pt;
+}
+.input_text{
+  font-size: 12pt;
+  width: 23vw;
+  height: 8vw;
+}
 .create_content{
+  margin-top: 0vw;
+  margin-left:  55vw;
+  font-size: 22pt;
   display: flex;
-  width: 20vw;
+  width: 70vw;
   height: 15vw;
+}
+
+.post_box{
+  height: 50vw;
+  background-size: cover;
+  background-image: url('../images/pim-chu-261032.jpg');
+  padding-top: 6vw;
+}
+.individual{
+  height: 45vw;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/jesus-kiteque-224069.jpg');
+  padding-top: 10vw;
+}
+.show_box{
+
+  margin-left: 4vw;
+  margin-right: 4vw;
+  padding-top: 2vw;
+}
+.button{
+  background-color: limegreen;
+  margin-left: 6vw;
+  height: 4vw;
+  width: 10vw;
+}
+.post_list{
+  text-decoration: none;
+}
+.post_content{
+  color: limegreen;
+  margin-left: 12vw;
+}
+.post_content a{
+  color: black;
 }

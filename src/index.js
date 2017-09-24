@@ -17,10 +17,12 @@ import ShowPost from './components/ShowPost';
 ReactDOM.render(
 <BrowserRouter>
   <BaseLayout>
-    <Route path='/showpost' component={ShowPost}/>
+    <Switch>
+    <Route path='/postlist/:hand' component={ShowPost}/>
     <Route path='/postlist' component={PostList}/>
     <Route path='/create' component={CreatePost}/>
-    <Route path='/' component={App} />
+    <Route exact path='/' component={App}/>
+    </Switch>
     </BaseLayout>
 </BrowserRouter>
   , document.getElementById('root'));
