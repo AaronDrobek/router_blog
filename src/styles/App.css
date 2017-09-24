@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+.selected{
+  color: limegreen;
+}
+.base_content {
+  text-decoration: none;
+  text-align: center;
+  width: 100vw;
+  position: fixed;
+  background-color: #222;
+  height: 6vw;
+  padding: 10px;
+  color: white;
+}
+.base_content a{
+  margin-left: 3vw;
+}
+.create_box{
+
+  padding-top: 10vw;
+
+}
+.create_content{
+  display: flex;
+  width: 20vw;
+  height: 15vw;
+}
