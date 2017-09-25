@@ -21,7 +21,7 @@ ReactDOM.render(
     <Route path='/postlist/:hand' component={ShowPost}/>
     <Route path='/postlist' component={PostList}/>
     <Route path='/create' component={CreatePost}/>
-    <Route exact path='/' component={App}/>
+    <Route path='/' component={App}/>
     </Switch>
     </BaseLayout>
 </BrowserRouter>

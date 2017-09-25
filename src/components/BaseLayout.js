@@ -7,8 +7,8 @@ export default class BaseLayout extends Component{
       <div className="base_box">
         <div className="base_content">
           <NavLink activeClassName="selected" to='/'>Home</NavLink>
-          <NavLink activeClassName="selected" to='/create'>Create Post</NavLink>
-          <NavLink activeClassName="selected" to='/postlist'>All Posts</NavLink>
+          <NavLink activeStyle={{color: "limegreen"}} to='/create'>Create Post</NavLink>
+          <NavLink activeStyle={{color: "limegreen"}} to='/postlist'>All Posts</NavLink>
         </div>
           {this.props.children}
       </div>

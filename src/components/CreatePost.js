@@ -47,9 +47,12 @@ export default class CreatePost extends Component{
   return response.json()
 
 })
-  .then((result) => {
-    this.setState({authorName:'', blogTitle:'', blogEntry:''});
+  .then(() =>{
+  this.props.history.push('/postlist');
   })
+  // .then((result) => {
+  //   this.setState({authorName:'', blogTitle:'', blogEntry:''});
+  // })
 
 .catch(err => {
   console.log(err, "boo!");
@@ -83,7 +86,7 @@ export default class CreatePost extends Component{
                       <textarea rows="2" columns="6" className="input_text" name="blog" type="text" placeholder="Blog About It" value={this.state.blogEntry} onChange={this.handleEntryChange} />
                     </h3>
 
-                        <button className="button" type="submit"><NavLink to='/postlist'>Submit</NavLink></button>
+                      <button className="button" type="submit"><Link to='/postlist'>Submit</Link></button>
 
           </form>
         </div>

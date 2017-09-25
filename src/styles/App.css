@@ -1,5 +1,4 @@
 @fontface {
-
   font-family: 'Sigmar One', cursive;
   src: url('https://fonts.googleapis.com/css?family=Modak|Sigmar+One" rel="stylesheet')
 }
@@ -13,6 +12,7 @@
   background-image: url('../images/seth-schwiet-40984.jpg');
   background-size: cover;
 }
+
 .app_content{
   margin-left: 25vw;
   font-size: 30pt;
@@ -20,7 +20,7 @@
   font-family: 'Sigmar One', cursive;
 
 }
- .selected {
+ a .selected{
   color: limegreen;
 }
 .base_content {
@@ -34,6 +34,7 @@
   color: white;
 }
 .base_content a{
+  color: orange;
   text-align: center;
   text-decoration: none;
   font-size: 24pt;

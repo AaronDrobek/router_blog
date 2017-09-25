@@ -45,7 +45,7 @@ export default class PostList extends Component{
     return(
       <div className="post_box" >
       <div className="post_content">
-        <h2>Blog Titles:</h2>
+        <h2>Trending Topics:</h2>
         {blogPost}
 
       </div>
