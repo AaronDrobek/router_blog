@@ -86,7 +86,7 @@ export default class CreatePost extends Component{
                       <textarea rows="2" columns="6" className="input_text" name="blog" type="text" placeholder="Blog About It" value={this.state.blogEntry} onChange={this.handleEntryChange} />
                     </h3>
 
-                      <button className="button" type="submit"><Link to='/postlist'>Submit</Link></button>
+                      <button className="button" type="submit">Submit</button>
 
           </form>
         </div>
